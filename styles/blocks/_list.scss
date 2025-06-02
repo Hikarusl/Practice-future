@@ -1,0 +1,9 @@
+@use '../helpers' as *;
+
+.list {
+  &-item {
+    &:not(:last-child) {
+      border-bottom: var(--border);
+    }
+  }
+}

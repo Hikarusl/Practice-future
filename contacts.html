@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Future Tech | News</title>
+  <link
+    rel="stylesheet"
+    href="./styles/main.css"
+  />
+  <script
+    src="./scripts/main.js"
+    type="module"
+    defer
+  ></script>
+</head>
+<body>
+<header
+  class="header"
+  data-js-header
+>
+  <div class="header__promo">
+    <div class="header__promo-inner container">
+      <a
+        href="/"
+        class="header__promo-link"
+      >
+        <span class="icon icon--yellow-arrow">Subscribe to our Newsletter For New & latest Blogs and Resources</span>
+      </a>
+    </div>
+  </div>
+  <div class="header__body">
+    <div class="header__body-inner container">
+      <a
+        href="/"
+        class="header-logo logo"
+        title="Home"
+      >
+        <img
+          src="./images/logo.svg"
+          alt="Future Tech"
+          class="logo-image"
+          width="179"
+          height="50"
+        >
+      </a>
+      <div
+        class="header__overlay "
+        data-js-header-overlay
+      >
+        <nav class="heder__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item ">
+              <a
+                href="./index.html"
+                class="header__menu-link"
+              >Home
+              </a>
+            </li>
+            <li class="header__menu-item ">
+              <a
+                href="./news.html"
+                class="header__menu-link"
+              >News
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                href="./podcasts.html"
+                class="header__menu-link"
+              >Podcasts
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                href="./resoueces.html"
+                class="header__menu-link"
+              >Resources
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          href="./contacts.html"
+          class="header__contacts button button-accent"
+        >Contact Us
+        </a>
+      </div>
+      <button
+        class="header__burger-button burger-button visible-mobile"
+        data-js-header-burger
+        aria-label="Open menu"
+        title="Open menu"
+      >
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section
+    class="contacts"
+    aria-labelledby="contacts-title"
+  >
+    <header class="contacts__header">
+      <h1
+        class="visually-hidden"
+        id="contacts-title"
+      >contacts
+      </h1>
+      <ul class="bordered-grid bordered-grid--4-cols container">
+        <li class="bordered-grid__item">
+          <div class="contacts-card">
+            <h2 class="contacts-card__title h6">General Inquiries</h2>
+            <div class="contacts-card__body">
+              <a
+                href="mailto:contact@ai-podcasts.com"
+                class="contacts-card__link button button--dark-gray"
+              >
+                <span class="icon icon--yellow-arrow">contact@ai-podcasts.com</span>
+              </a>
+              <a
+                href="tel:+11234567890"
+                class="contacts-card__link button button--dark-gray"
+              >
+                <span class="icon icon--yellow-arrow">+1 (123) 456-7890</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bordered-grid__item">
+          <div class="contacts-card">
+            <h2 class="contacts-card__title h6">Technical Support</h2>
+            <div class="contacts-card__body">
+              <a
+                href="mailto:contact@ai-podcasts.com"
+                class="contacts-card__link button button--dark-gray"
+              >
+                <span class="icon icon--yellow-arrow">contact@ai-podcasts.com</span>
+              </a>
+              <a
+                href="tel:+1123456-7890"
+                class="contacts-card__link button button--dark-gray"
+              >
+                <span class="icon icon--yellow-arrow">+1 (123) 456-7890</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bordered-grid__item">
+          <div class="contacts-card">
+            <h2 class="contacts-card__title h6">Our Office</h2>
+            <div class="contacts-card__body">
+              <address class="contacts-card__address">Address: 123 AI Tech Avenue, Techville, 54321</address>
+              <a
+                href="/"
+                class="contacts-card__link button button--dark-gray"
+              >
+                <span class="icon icon--yellow-arrow">Get Directions</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bordered-grid__item">
+          <div class="contacts-card">
+            <h2 class="contacts-card__title h6">Connect with Us</h2>
+            <div class="contacts-card__body">
+              <div class="footer--soc1als soc1als">
+                <ul class="footer--soc1als-list">
+                  <li class="footer--soc1als-item">
+                    <a
+                      href="/"
+                      class="footer--soc1als-link"
+                      target="_blank"
+                      aria-label="Twiter"
+                      title="Twiter"
+                    >
+                      <svg
+                        width="24"
+                        height="20"
+                        viewBox="0 0 24 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21.0566 5.18066C21.0659 5.39186 21.0659 5.59346 21.0659 5.80466C21.0752 12.2079 16.3707 19.5999 7.76744 19.5999C5.22999 19.5999 2.73885 18.8415 0.599609 17.4207C0.97004 17.4687 1.34047 17.4879 1.7109 17.4879C3.81309 17.4879 5.85972 16.7583 7.5174 15.4047C5.51707 15.3663 3.75753 14.0127 3.14632 12.0351C3.85014 12.1791 4.57248 12.1503 5.25777 11.9487C3.08149 11.5071 1.51642 9.51987 1.50716 7.20626C1.50716 7.18706 1.50716 7.16786 1.50716 7.14866C2.15542 7.52306 2.88702 7.73426 3.62788 7.75346C1.58125 6.33266 0.942258 3.50065 2.1832 1.28304C4.56322 4.31665 8.06378 6.15026 11.8237 6.35186C11.444 4.67185 11.9626 2.90545 13.1757 1.71505C15.0557 -0.118561 18.0191 -0.0225605 19.7972 1.92625C20.8436 1.71505 21.8531 1.31184 22.7699 0.745442C22.418 1.86865 21.6864 2.81905 20.714 3.42385C21.6401 3.30865 22.5476 3.04945 23.3996 2.66545C22.7699 3.64465 21.9734 4.48945 21.0566 5.18066Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer--soc1als-item">
+                    <a
+                      href="/"
+                      class="footer--soc1als-link"
+                      target="_blank"
+                      aria-label="Medium"
+                      title="Medium"
+                    >
+                      <svg
+                        width="24"
+                        height="15"
+                        viewBox="0 0 24 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.5374 7.2276C13.5374 10.9983 10.5069 14.0551 6.76883 14.0551C3.03073 14.0551 0 10.9976 0 7.2276C0 3.45758 3.0305 0.399902 6.76883 0.399902C10.5072 0.399902 13.5374 3.45688 13.5374 7.2276Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M20.9622 7.22756C20.9622 10.7769 19.447 13.6553 17.5778 13.6553C15.7086 13.6553 14.1934 10.7769 14.1934 7.22756C14.1934 3.67824 15.7084 0.799805 17.5776 0.799805C19.4467 0.799805 20.962 3.67732 20.962 7.22756"
+                          fill="white"
+                        />
+                        <path
+                          d="M23.9995 7.22749C23.9995 10.4068 23.4667 12.9857 22.8092 12.9857C22.1517 12.9857 21.6191 10.4075 21.6191 7.22749C21.6191 4.04748 22.152 1.46924 22.8092 1.46924C23.4665 1.46924 23.9995 4.04725 23.9995 7.22749Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer--soc1als-item">
+                    <a
+                      href="/"
+                      class="footer--soc1als-link"
+                      target="_blank"
+                      aria-label="LinkedIn"
+                      title="LinkedIn"
+                    >
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.8642 0.600098H2.13505C1.72783 0.600098 1.33728 0.761867 1.04933 1.04982C0.761379 1.33777 0.599609 1.72832 0.599609 2.13554V19.8647C0.599609 20.2719 0.761379 20.6624 1.04933 20.9504C1.33728 21.2383 1.72783 21.4001 2.13505 21.4001H19.8642C20.2714 21.4001 20.6619 21.2383 20.9499 20.9504C21.2378 20.6624 21.3996 20.2719 21.3996 19.8647V2.13554C21.3996 1.72832 21.2378 1.33777 20.9499 1.04982C20.6619 0.761867 20.2714 0.600098 19.8642 0.600098ZM6.79916 18.3191H3.67194V8.38565H6.79916V18.3191ZM5.23339 7.0091C4.87866 7.0071 4.53247 6.90007 4.23851 6.70151C3.94456 6.50295 3.716 6.22176 3.5817 5.89343C3.4474 5.5651 3.41337 5.20434 3.4839 4.85669C3.55444 4.50904 3.72637 4.19007 3.97801 3.94004C4.22965 3.69001 4.54972 3.52013 4.89781 3.45183C5.24591 3.38353 5.60644 3.41988 5.9339 3.55628C6.26136 3.69269 6.54108 3.92304 6.73775 4.21827C6.93441 4.51349 7.03922 4.86036 7.03894 5.2151C7.04229 5.45259 6.99779 5.68833 6.90809 5.90826C6.81839 6.12819 6.68533 6.32781 6.51684 6.49522C6.34835 6.66263 6.14788 6.79441 5.92738 6.8827C5.70688 6.97098 5.47086 7.01397 5.23339 7.0091ZM18.3258 18.3278H15.2001V12.901C15.2001 11.3005 14.5197 10.8065 13.6415 10.8065C12.7142 10.8065 11.8042 11.5057 11.8042 12.9414V18.3278H8.67694V8.39288H11.6843V9.76943H11.7247C12.0266 9.15843 13.0839 8.1141 14.6974 8.1141C16.4423 8.1141 18.3273 9.14977 18.3273 12.1831L18.3258 18.3278Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="contacts__body">
+      <div class="list">
+        <div class="list__item">
+          <div class="card container">
+            <div class="card__preview">
+              <div class="card__preview-main">
+                <img
+                  class="card__preview-icon"
+                  src="./images/contacts/icon-1.svg"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+                <div class="card__preview-info">
+                  <h2 class="card__preview-title">Get in Touch with AI Podcasts</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card__body">
+              <form
+                action="/"
+                class="feedback-form"
+              >
+                <div class="feedback-form__cell field">
+                  <label
+                    for="firstName"
+                    class="field__label"
+                  >First Name <span
+                    class="field__required-star"
+                    aria-hidden="true"
+                  >*</span></label>
+                  <input
+                    id="firstName"
+                    class="field__control"
+                    type="text"
+                    placeholder="Ivan"
+                    required
+                  >
+                </div>
+                <div class="feedback-form__cell field">
+                  <label
+                    for="lastName"
+                    class="field__label"
+                  >Last Name <span
+                    class="field__required-star"
+                    aria-hidden="true"
+                  >*</span></label>
+                  <input
+                    id="lastName"
+                    class="field__control"
+                    type="text"
+                    placeholder="Ivanov"
+                  >
+                </div>
+                <div class="feedback-form__cell field">
+                  <label
+                    for="email"
+                    class="field__label"
+                  >Email <span
+                    class="field__required-star"
+                    aria-hidden="true"
+                  >*</span></label>
+                  <input
+                    id="email"
+                    class="field__control"
+                    type="email"
+                    placeholder="example@email.com"
+                    required
+                  >
+                </div>
+                <div class="feedback-form__cell field">
+                  <label
+                    for="phoneNumber"
+                    class="field__label"
+                  >Phone Number
+                  </label>
+                  <div class="field__body">
+                    <div class="select">SELECT</div>
+                    <input
+                      id="phoneNumber"
+                      class="field__control"
+                      placeholder="(999) 999-99-99"
+                      required
+                    >
+                  </div>
+
+                </div>
+                <div class="feedback-form__cell feedback-form__cell--wide field">
+                  <label
+                    for="message"
+                    class="field__label"
+                  >Message <span
+                    class="field__required-star"
+                    aria-hidden="true"
+                  >*</span></label>
+                  <textarea
+                    id="message"
+                    class="field__control"
+                    placeholder="Hi, i have..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="feedback-form__cell feedback-form__cell--wide">
+                  <div class="feedback-form__actions">
+                    <div class="feedback-form__agreement">
+                      <label
+                        for=""
+                        class="checkbox"
+                      >
+                        <input
+                          class="checkbox__input"
+                          type="checkbox"
+                          required
+                        >
+                        <span class="checkbox__label">I agree with Terms of Use and Privacy Policy</span>
+                      </label>
+                    </div>
+                    <button class="feedback-form__submit-button button button-accent">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="list__item">
+          <div class="card container">
+            <div class="card__preview">
+              <div class="card__preview-main">
+                <img
+                  class="card__preview-icon"
+                  src="./images/contacts/icon-2.svg"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+                <div class="card__preview-info">
+                  <h2 class="card__preview-title h3">Asked question</h2>
+                  <div class="card__preview-description">
+                    <p>If the question is not available on our FAQ section, Feel free to contact us personally, we will resolve your respective doubts.</p>
+                  </div>
+                </div>
+                <a
+                  href="/"
+                  class="card__preview-link button button--dark-gray"
+                >
+                  <span class="icon icon--yellow-arrow">Ask Qustion</span>
+                </a>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="accordion-group">
+                <div class="accordion tile">
+                  <details
+                    class="accordion__details"
+                    name="faq"
+                    open
+                  >
+                    <summary class="accordion__summary">
+                      <h4 class="accordion__title h6">
+                        <span
+                          role="term"
+                          aria-details="faq-1"
+                        >What is AI?</span>
+                      </h4>
+                    </summary>
+                  </details>
+                  <div
+                    class="accordion__content"
+                    id="faq-1"
+                    role="definition"
+                  >
+                    <div class="accordion__content-inner">
+                      <div class="accordion__content-body">
+                        <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion tile">
+                  <details
+                    class="accordion__details"
+                    name="faq"
+                  >
+                    <summary class="accordion__summary">
+                      <h4 class="accordion__title h6">
+                        <span
+                          role="term"
+                          aria-details="faq-2"
+                        >How can I listen to your podcasts?</span>
+                      </h4>
+                    </summary>
+                  </details>
+                  <div
+                    class="accordion__content"
+                    id="faq-2"
+                    role="definition"
+                  >
+                    <div class="accordion__content-inner">
+                      <div class="accordion__content-body">
+                        <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion tile">
+                  <details
+                    class="accordion__details"
+                    name="faq"
+                  >
+                    <summary class="accordion__summary">
+                      <h4 class="accordion__title h6">
+                        <span
+                          role="term"
+                          aria-details="faq-3"
+                        >Are your podcasts free to listen to?</span>
+                      </h4>
+                    </summary>
+                  </details>
+                  <div
+                    class="accordion__content"
+                    id="faq-3"
+                    role="definition"
+                  >
+                    <div class="accordion__content-inner">
+                      <div class="accordion__content-body">
+                        <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion tile">
+                  <details
+                    class="accordion__details"
+                    name="faq"
+                  >
+                    <summary class="accordion__summary">
+                      <h4 class="accordion__title h6">
+                        <span
+                          role="term"
+                          aria-details="faq-4"
+                        >Can I download episodes to listen offline?</span>
+                      </h4>
+                    </summary>
+                  </details>
+                  <div
+                    class="accordion__content"
+                    id="faq-4"
+                    role="definition"
+                  >
+                    <div class="accordion__content-inner">
+                      <div class="accordion__content-body">
+                        <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion tile">
+                  <details
+                    class="accordion__details"
+                    name="faq"
+                  >
+                    <summary class="accordion__summary">
+                      <h4 class="accordion__title h6">
+                        <span
+                          role="term"
+                          aria-details="faq-5"
+                        >How often do you release new episodes?</span>
+                      </h4>
+                    </summary>
+                  </details>
+                  <div
+                    class="accordion__content"
+                    id="faq-5"
+                    role="definition"
+                  >
+                    <div class="accordion__content-inner">
+                      <div class="accordion__content-body">
+                        <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section
+    class="aboute"
+    aria-labelledby="aboute-title"
+  >
+    <div class="aboute__inner container">
+      <header class="aboute__header">
+        <img
+          class="aboute__icon"
+          src="./icons/aboute-icon.svg"
+          alt=""
+          width="150"
+          height="150"
+          loading="lazy"
+        >
+        <div class="aboute__info">
+          <p class="aboute__subtitle tag">Learn, Connect, and Innovate</p>
+          <h2
+            class="aboute__title"
+            id="aboute-title"
+          >Be Part of the Future Tech Revolution
+          </h2>
+
+
+          <div class="aboute__discr">
+            <p>Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
+          </div>
+        </div>
+      </header>
+      <ul class="aboute__list">
+        <li class="aboute__item">
+          <a
+            href="/"
+            class="aboute-card tile"
+          >
+            <h3 class="aboute-card__title cycle-icon">Resource Access</h3>
+            <div class="aboute__discr">
+              <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
+            </div>
+          </a>
+        </li>
+        <li class="aboute__item">
+          <a
+            href="/"
+            class="aboute-card tile"
+          >
+            <h3 class="aboute-card__title cycle-icon">Community Forum</h3>
+            <div class="aboute__discr">
+              <p>Join our active community forum to discuss industry trends, share insights, and collaborate with peers.</p>
+            </div>
+          </a>
+        </li>
+        <li class="aboute__item">
+          <a
+            href="/"
+            class="aboute-card tile"
+          >
+            <h3 class="aboute-card__title cycle-icon">Tech Events</h3>
+            <div class="aboute__discr">
+              <p>Stay updated on upcoming tech events, webinars, and conferences to enhance your knowledge.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__inner container">
+    <div class="footer__body">
+      <nav class="footer__menu">
+        <div class="footer__menu-colomun">
+          <a
+            href="/"
+            class="footer__menu-main-link"
+          >Home
+          </a>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Features
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Blogs
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Resources
+              </a>
+              <span class="badge">New</span>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Testimonials
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Contact Us
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Newsletter
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-colomun">
+          <a
+            href="/"
+            class="footer__menu-main-link"
+          >News
+          </a>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Trending Stories
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Featured Videos
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Technology
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Health
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Politics
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Environment
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-colomun">
+          <a
+            href="/"
+            class="footer__menu-main-link"
+          >Blogs
+          </a>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Quantum Computing
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >AI Ethics
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Space Exploration
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Biotechnology
+              </a>
+              <span class="badge">New</span>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Renewable Energy
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >Biohacking
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-colomun">
+          <a
+            href="/"
+            class="footer__menu-main-link"
+          >Podcasts
+          </a>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >AI Revolution
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >AI Revolution
+              </a>
+              <span class="badge">New</span>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >TechTalk AI
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link"
+              >AI Conversations
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__menu-colomun">
+          <a
+            href="/"
+            class="footer__menu-main-link"
+          >Resources
+          </a>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link button"
+              >
+                <span class="icon icon--yellow-arrow">Whitepapers</span>
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link button"
+              >
+                <span class="icon icon--yellow-arrow">Ebooks</span>
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link button"
+              >
+                <span class="icon icon--yellow-arrow">Reports</span>
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a
+                href="/"
+                class="footer__menu-link button"
+              >
+                <span class="icon icon--yellow-arrow">Research Papers</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__extra">
+      <div class="footer__extra-menu">
+        <ul class="footer__extra-menu-list">
+          <li class="footer__extra-menu-item">
+            <a
+              href="/"
+              class="footer__extra-menu-link"
+            >Terms & Conditions
+            </a>
+          </li>
+          <li class="footer__extra-menu-item">
+            <a
+              href="/"
+              class="footer__extra-menu-link"
+            >Privacy Policy
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer--soc1als soc1als">
+        <ul class="footer--soc1als-list">
+          <li class="footer--soc1als-item">
+            <a
+              href="/"
+              class="footer--soc1als-link"
+              target="_blank"
+              aria-label="Twiter"
+              title="Twiter"
+            >
+              <svg
+                width="24"
+                height="20"
+                viewBox="0 0 24 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.0566 5.18066C21.0659 5.39186 21.0659 5.59346 21.0659 5.80466C21.0752 12.2079 16.3707 19.5999 7.76744 19.5999C5.22999 19.5999 2.73885 18.8415 0.599609 17.4207C0.97004 17.4687 1.34047 17.4879 1.7109 17.4879C3.81309 17.4879 5.85972 16.7583 7.5174 15.4047C5.51707 15.3663 3.75753 14.0127 3.14632 12.0351C3.85014 12.1791 4.57248 12.1503 5.25777 11.9487C3.08149 11.5071 1.51642 9.51987 1.50716 7.20626C1.50716 7.18706 1.50716 7.16786 1.50716 7.14866C2.15542 7.52306 2.88702 7.73426 3.62788 7.75346C1.58125 6.33266 0.942258 3.50065 2.1832 1.28304C4.56322 4.31665 8.06378 6.15026 11.8237 6.35186C11.444 4.67185 11.9626 2.90545 13.1757 1.71505C15.0557 -0.118561 18.0191 -0.0225605 19.7972 1.92625C20.8436 1.71505 21.8531 1.31184 22.7699 0.745442C22.418 1.86865 21.6864 2.81905 20.714 3.42385C21.6401 3.30865 22.5476 3.04945 23.3996 2.66545C22.7699 3.64465 21.9734 4.48945 21.0566 5.18066Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer--soc1als-item">
+            <a
+              href="/"
+              class="footer--soc1als-link"
+              target="_blank"
+              aria-label="Medium"
+              title="Medium"
+            >
+              <svg
+                width="24"
+                height="15"
+                viewBox="0 0 24 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5374 7.2276C13.5374 10.9983 10.5069 14.0551 6.76883 14.0551C3.03073 14.0551 0 10.9976 0 7.2276C0 3.45758 3.0305 0.399902 6.76883 0.399902C10.5072 0.399902 13.5374 3.45688 13.5374 7.2276Z"
+                  fill="white"
+                />
+                <path
+                  d="M20.9622 7.22756C20.9622 10.7769 19.447 13.6553 17.5778 13.6553C15.7086 13.6553 14.1934 10.7769 14.1934 7.22756C14.1934 3.67824 15.7084 0.799805 17.5776 0.799805C19.4467 0.799805 20.962 3.67732 20.962 7.22756"
+                  fill="white"
+                />
+                <path
+                  d="M23.9995 7.22749C23.9995 10.4068 23.4667 12.9857 22.8092 12.9857C22.1517 12.9857 21.6191 10.4075 21.6191 7.22749C21.6191 4.04748 22.152 1.46924 22.8092 1.46924C23.4665 1.46924 23.9995 4.04725 23.9995 7.22749Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer--soc1als-item">
+            <a
+              href="/"
+              class="footer--soc1als-link"
+              target="_blank"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.8642 0.600098H2.13505C1.72783 0.600098 1.33728 0.761867 1.04933 1.04982C0.761379 1.33777 0.599609 1.72832 0.599609 2.13554V19.8647C0.599609 20.2719 0.761379 20.6624 1.04933 20.9504C1.33728 21.2383 1.72783 21.4001 2.13505 21.4001H19.8642C20.2714 21.4001 20.6619 21.2383 20.9499 20.9504C21.2378 20.6624 21.3996 20.2719 21.3996 19.8647V2.13554C21.3996 1.72832 21.2378 1.33777 20.9499 1.04982C20.6619 0.761867 20.2714 0.600098 19.8642 0.600098ZM6.79916 18.3191H3.67194V8.38565H6.79916V18.3191ZM5.23339 7.0091C4.87866 7.0071 4.53247 6.90007 4.23851 6.70151C3.94456 6.50295 3.716 6.22176 3.5817 5.89343C3.4474 5.5651 3.41337 5.20434 3.4839 4.85669C3.55444 4.50904 3.72637 4.19007 3.97801 3.94004C4.22965 3.69001 4.54972 3.52013 4.89781 3.45183C5.24591 3.38353 5.60644 3.41988 5.9339 3.55628C6.26136 3.69269 6.54108 3.92304 6.73775 4.21827C6.93441 4.51349 7.03922 4.86036 7.03894 5.2151C7.04229 5.45259 6.99779 5.68833 6.90809 5.90826C6.81839 6.12819 6.68533 6.32781 6.51684 6.49522C6.34835 6.66263 6.14788 6.79441 5.92738 6.8827C5.70688 6.97098 5.47086 7.01397 5.23339 7.0091ZM18.3258 18.3278H15.2001V12.901C15.2001 11.3005 14.5197 10.8065 13.6415 10.8065C12.7142 10.8065 11.8042 11.5057 11.8042 12.9414V18.3278H8.67694V8.39288H11.6843V9.76943H11.7247C12.0266 9.15843 13.0839 8.1141 14.6974 8.1141C16.4423 8.1141 18.3273 9.14977 18.3273 12.1831L18.3258 18.3278Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <p class="footer__copyright">©
+        <time datetime="2024">2024</time>
+        FutureTech. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

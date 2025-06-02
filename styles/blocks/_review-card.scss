@@ -1,0 +1,38 @@
+@use '../helpers' as *;
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: rem(40);
+
+  max-width: rem(500);
+  margin-inline: auto;
+
+  @include laptop {
+    row-gap: rem(30);
+  }
+
+  &__author {
+    --imgSize: #{rem(60)};
+
+    @include laptop {
+      --imgSize: #{rem(50)};
+    }
+  }
+
+  &__body {
+    position: relative;
+    padding: fluid(30, 20);
+    padding-top: fluid(50, 30);
+    color: var(--color-light);
+
+  }
+
+  &__rating-view {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -50%;
+  }
+}

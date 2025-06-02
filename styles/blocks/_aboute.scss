@@ -1,0 +1,89 @@
+@use '../helpers' as *;
+
+.aboute {
+  padding-block: fluid(120, 40);
+  background-color: var(--color-dark-10);
+
+  &__inner {
+    display: grid;
+    row-gap: fluid(100, 40);
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto, 1fr;
+    grid-template-areas: 
+    'icon info'
+    'icon descr';
+    column-gap: fluid(80, 20);
+    align-items: center;
+    row-gap: rem(30);
+
+    @include laptop {
+      row-gap: rem(20);
+    }
+
+    @include mobile {
+      row-gap: rem(4);
+      grid-template-areas: 
+      'icon subtitle'
+      'title title'
+      'descr descr';
+    }
+  }
+
+  &__icon {
+    grid-area: icon;
+    align-self: center;
+    width: fluid(150, 60);
+  }
+
+  &__info {
+    display: grid;
+    row-gap: rem(16);
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__subtitle {
+    justify-self: start;
+
+    @include mobile {
+      grid-area: subtitle;
+    }
+  }
+
+  &__title {
+    @include mobile {
+      grid-area: title;
+      margin-top: rem(20);
+
+    }
+  }
+
+  &__discr {
+    @include mobile {
+      grid-area: descr;
+    }
+  }
+
+  &__list {
+    display: grid;
+    padding: rem(20);
+    border-radius: rem(12);
+    background-color: var(--color-dark);
+    gap: rem(20);
+
+    @include laptop {
+      padding: rem(10);
+      border-radius: rem(10);
+      gap: rem(10);
+    }
+
+    @include mobile-above {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
