@@ -12,12 +12,11 @@
   &__header {
     display: grid;
     grid-template-columns: auto, 1fr;
-    grid-template-areas: 
-    'icon info'
-    'icon descr';
-    column-gap: fluid(80, 20);
+    grid-template-areas:
+      'icon info'
+      'icon descr';
+    gap: rem(30) fluid(80, 20);
     align-items: center;
-    row-gap: rem(30);
 
     @include laptop {
       row-gap: rem(20);
@@ -25,10 +24,10 @@
 
     @include mobile {
       row-gap: rem(4);
-      grid-template-areas: 
-      'icon subtitle'
-      'title title'
-      'descr descr';
+      grid-template-areas:
+        'icon subtitle'
+        'title title'
+        'descr descr';
     }
   }
 
@@ -59,7 +58,6 @@
     @include mobile {
       grid-area: title;
       margin-top: rem(20);
-
     }
   }
 

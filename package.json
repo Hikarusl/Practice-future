@@ -5,11 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass --watch ."
+    "sass-watch": "sass --watch .",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "lint:css": "stylelint \"**/*.scss\"",
+    "lint:css:fix": "stylelint \"**/*.scss\" --fix",
+    "format": "prettier . --write",
+    "lint": "npm run lint:js ; npm run lint:css",
+    "lint:fix": "npm run lint:js:fix ; npm run lint:css:fix ; npm run format"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.86.0"
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "sass": "^1.86.0",
+    "stylelint": "^16.23.0",
+    "stylelint-config-standard": "^39.0.0"
   }
 }

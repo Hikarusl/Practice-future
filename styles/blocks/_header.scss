@@ -14,12 +14,13 @@
     animation-fill-mode: both;
     animation-timeline: scroll();
     animation-range: rem(100) rem(200);
+
     @keyframes scrolling-header {
       to {
         box-shadow: 0 0 1rem 0 var(--color-dark-40);
       }
-
     }
+
     @include mobile {
       padding-block: rem(14);
     }
@@ -50,6 +51,7 @@
       @include laptop {
         column-gap: rem(6);
       }
+
       @include mobile {
         flex-direction: column;
         row-gap: 1rem;
@@ -106,6 +108,5 @@
 
       translate: 100%; //уходит в право где не виден
     }
-
   }
 }

@@ -2,29 +2,24 @@
 
 :root {
   --color-dark: #141414;
-  --color-light: #FFF;
-  --color-dark-10: #1A1A1A;
+  --color-light: #fff;
+  --color-dark-10: #1a1a1a;
   --color-dark-15: #262626;
-  --color-dark-20: #333333;
-  --color-dark-40: #666666;
-  --color-gray-50: #7E7E81;
-  --color-gray-60: #98989A;
-  --color-accent: #FFD11A;
-  --color-red: #FF5500;
-
+  --color-dark-20: #333;
+  --color-dark-40: #666;
+  --color-gray-50: #7e7e81;
+  --color-gray-60: #98989a;
+  --color-accent: #ffd11a;
+  --color-red: #f50;
   --font-family-base: 'Inter', sans-serif;
   --font-family-accent: 'Kumbh Sans', sans-serif;
-
   --container-width: #{rem(1600)};
   --container-padding-x: #{rem(30)};
-
   --transition-duration: 0.2s;
-
   --border: #{rem(1)} solid var(--color-dark-15);
+  --shadow: 0 0 0 #{rem(3)} #191919;
 
   @include laptop {
     --container-width: #{rem(1280)};
   }
 }
-    
-  

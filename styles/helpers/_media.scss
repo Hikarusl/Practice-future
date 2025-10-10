@@ -5,7 +5,6 @@ $tablet: 1023.98;
 $mobile: 767.98;
 $mobile-s: 480.98;
 
-
 @mixin laptop-above {
   @media (width > rem($laptop)) {
     @content;
@@ -64,7 +63,7 @@ $mobile-s: 480.98;
   @if ($hasActiveEffectOnMobile) {
     @media (any-hover: none) {
       &:active {
-        @content
+        @content;
       }
     }
   }

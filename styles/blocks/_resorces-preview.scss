@@ -12,8 +12,9 @@
     padding-bottom: rem(50);
     row-gap: rem(20);
   }
+
   @include tablet {
-    background-image: url(../../images/preview-bg-mobile.png);
+    background-image: url('../../images/preview-bg-mobile.png');
     background-size: contain;
   }
 

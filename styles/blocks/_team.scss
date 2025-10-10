@@ -2,6 +2,7 @@
 
 .team {
   --pearsonImgSizze: #{rem(60)};
+
   display: flex;
   padding: rem(10);
   background-color: var(--color-dark-10);
@@ -10,6 +11,7 @@
 
   @include laptop {
     padding: rem(8);
+
     --pearsonImgSizze: #{rem(50)};
   }
 

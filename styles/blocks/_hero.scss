@@ -6,8 +6,8 @@
       display: grid;
       grid-template-columns: 60% auto;
       grid-template-areas:
-            'body resorces'
-            'metrics resorces';
+        'body resorces'
+        'metrics resorces';
     }
   }
 
@@ -42,12 +42,12 @@
         margin-bottom: rem(14);
       }
     }
-
   }
 
   &__title {
     &:not(:last-child) {
       margin-bottom: rem(20);
+
       @include mobile {
         margin-bottom: rem(10);
       }
@@ -59,6 +59,7 @@
       grid-area: metrics;
       border-top: var(--border);
     }
+
     @include tablet {
       &::before {
         width: 100vw;
@@ -71,13 +72,12 @@
     grid-area: resorces;
     padding-left: rem(80);
     padding-bottom: rem(80);
-    background: url(../../images/previwe_bg.png) 0 0/cover no-repeat;
+    background: url('../../images/previwe_bg.png') 0 0 / cover no-repeat;
 
     @include tablet {
       width: 100vw;
       margin-left: calc(var(--container-padding-x) * -1);
       padding: rem(100) rem(40) rem(40);
-
     }
 
     @include tablet-above {
@@ -97,12 +97,14 @@
 
     &-item {
       --paddingX: #{rem(80)};
+
       padding-block: rem(50);
 
       @include tablet-above {
         &:not(:first-child) {
           padding-left: var(--paddingX);
         }
+
         &:not(:last-child) {
           padding-right: var(--paddingX);
           border-right: var(--border);
@@ -116,11 +118,10 @@
           border-bottom: var(--border);
         }
       }
+
       @include laptop {
         --paddingX: #{rem(50)};
       }
     }
-
-
   }
 }

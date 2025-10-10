@@ -1,7 +1,6 @@
 @use '../helpers' as *;
 
 .hero-alt {
-
   &__header {
     padding-top: rem(130);
     padding-bottom: rem(150);
@@ -18,8 +17,7 @@
 
     &-inner {
       display: grid;
-      row-gap: rem(20);
-      column-gap: rem(80);
+      gap: rem(20) rem(80);
 
       @include laptop {
         column-gap: rem(60);
@@ -40,7 +38,7 @@
 
     &-hidden-part {
       @include mobile-above {
-        @include visually-hidden
+        @include visually-hidden;
       }
     }
   }

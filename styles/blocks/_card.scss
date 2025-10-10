@@ -92,7 +92,7 @@
     row-gap: fluid(20, 4);
 
     &--wide {
-      grid-column: -1 /  1;
+      grid-column: -1 / 1;
     }
 
     &:has(> *:only-child) {
@@ -103,8 +103,8 @@
       display: grid;
       grid-template-columns: 1fr auto;
       grid-template-areas:
-                'other link'
-                'other link';
+        'other link'
+        'other link';
       align-items: center;
       column-gap: rem(20);
     }

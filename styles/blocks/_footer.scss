@@ -18,6 +18,7 @@
       grid-template-columns: repeat(2, 1fr);
       row-gap: rem(40);
     }
+
     @include mobile {
       row-gap: rem(20);
     }
@@ -29,13 +30,12 @@
       &:last-child {
         @include tablet {
           grid-column: -1 / 1;
+
           .footer__menu-list {
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             gap: rem(12);
           }
         }
-
       }
     }
 
@@ -63,7 +63,6 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
-
     padding-block: rem(40);
 
     @include laptop {

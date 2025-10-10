@@ -6,14 +6,15 @@
   font-size: rem(16);
   border-radius: rem(6);
   color: var(--color-light);
-
   // сложная рамка с градиентом
-  border: rem(1) solid transparent;
-  background: linear-gradient(var(--color-dark-10), var(--color-dark-10)) padding-box,
-  linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-accent) 136%) border-box;
+  border: rem(1) solid transparent;border
+  background:
+    linear-gradient(var(--color-dark-10), var(--color-dark-10)) padding-box,
+    linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-accent) 136%)
+      border-box;
 
   @include laptop {
     border-radius: rem(4);
-    font-size: rem(14)
+    font-size: rem(14);
   }
 }

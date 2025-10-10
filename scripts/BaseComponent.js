@@ -1,7 +1,9 @@
 class BaseComponent {
   constructor() {
     if (this.constructor === BaseComponent) {
-      throw new Error('Невозможно создать экземпляр абстрактного класса BaseComponent!')
+      throw new Error(
+        'Невозможно создать экземпляр абстрактного класса BaseComponent!',
+      )
     }
   }
 

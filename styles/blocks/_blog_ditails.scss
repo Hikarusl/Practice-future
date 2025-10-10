@@ -7,13 +7,14 @@
     min-height: fluid(598, 281);
     padding-block: fluid(65, 17);
     text-align: center;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180deg,
-        rgba(20, 20, 20, 0) 0%,
-        rgba(20, 20, 20, 0.88) 75.52%,
+        rgb(20 20 20 / 0%) 0%,
+        rgb(20 20 20 / 88%) 75.52%,
         #141414 100%
-    ),
-    var(--bgImg) center/cover no-repeat;
+      ),
+      var(--bgImg) center/cover no-repeat;
   }
 
   &__title {
@@ -78,7 +79,11 @@
   }
 
   &__body {
-    h2, h3, h4, h5, h6 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       &:not(:first-child) {
         margin-top: 1.5em;
       }

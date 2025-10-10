@@ -6,7 +6,7 @@
   padding-inline: var(--container-padding-x);
 }
 
-.visually-hiden {
+.visually-hidden {
   @include visually-hidden;
 }
 
@@ -64,10 +64,10 @@
   }
 }
 
-
 .cycle-icon {
   --surclSize: #{rem(52)};
   --surclMarginLeft: #{rem(20)};
+
   position: relative;
   padding-right: calc(var(--surclSize) + var(--surclMarginLeft));
   min-height: var(--surclSize);
@@ -87,7 +87,8 @@
 
     content: '';
     right: 0;
-    background: url(../../icons/blackArrow.svg) center no-repeat var(--color-accent);
+    background: url('../../icons/blackArrow.svg') center no-repeat
+      var(--color-accent);
     border-radius: 50%;
   }
 }

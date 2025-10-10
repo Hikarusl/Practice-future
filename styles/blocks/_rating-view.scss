@@ -15,12 +15,13 @@
 
   &__star {
     --size: #{rem(24)};
+
     @include square(var(--size));
 
-    background: url(../../icons/star.svg) center/contain no-repeat;
+    background: url('../../icons/star.svg') center/contain no-repeat;
 
     &.is-active {
-      background-image: url(../../icons/star_yellow.png);
+      background-image: url('../../icons/star_yellow.png');
     }
 
     @include laptop {

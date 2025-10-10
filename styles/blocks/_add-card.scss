@@ -7,6 +7,7 @@
   @include laptop {
     row-gap: rem(20);
   }
+
   @include mobile {
     row-gap: rem(14);
   }
@@ -14,16 +15,15 @@
   &__link {
     --surclSize: #{rem(52)};
     --surclMarginLeft: #{rem(20)};
+
     position: relative;
     padding-right: calc(var(--surclSize) + var(--surclMarginLeft));
-
     display: grid;
     row-gap: rem(4);
 
     @include laptop {
       row-gap: rem(2);
     }
-
   }
 
   &__details {
@@ -35,6 +35,7 @@
     @include laptop {
       width: rem(40);
     }
+
     @include mobile {
       width: rem(30);
     }

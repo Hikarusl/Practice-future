@@ -24,15 +24,16 @@
       padding: rem(30) rem(40);
       row-gap: rem(2);
     }
+
     @include tablet {
-      padding: rem(20) rem(20);
+      padding: rem(20);
       row-gap: 0;
     }
   }
 
   &__value {
     font-weight: 600;
-    color: var(--color-light)
+    color: var(--color-light);
   }
 
   &__sign {

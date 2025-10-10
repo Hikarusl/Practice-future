@@ -5,11 +5,11 @@ class VideoPlayer {
     root: rootSelector,
     video: '[data-js-video-player-video]',
     button: '[data-js-video-player-play-button]',
-    pannel: '[data-js-video-player-pannel]'
+    pannel: '[data-js-video-player-pannel]',
   }
 
   stateClasses = {
-    isActive: 'is-active'
+    isActive: 'is-active',
   }
 
   constructor(rootElement) {

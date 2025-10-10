@@ -59,7 +59,7 @@
   padding: 0 !important;
   white-space: nowrap !important;
   clip-path: inset(100%) !important;
-  clip: rect(0 0 0 0) !important;
+  clip-path: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
 
@@ -70,10 +70,9 @@
     @include abs-x;
 
     content: '';
-    #{$property} : 0;
+    #{$property}: 0;
     width: 100vw;
     height: rem(1);
     background-color: var(--color-dark-15);
-
   }
 }
