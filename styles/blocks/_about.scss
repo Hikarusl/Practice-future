@@ -1,6 +1,6 @@
 @use '../helpers' as *;
 
-.aboute {
+.about {
   padding-block: fluid(120, 40);
   background-color: var(--color-dark-10);
 
@@ -11,35 +11,38 @@
 
   &__header {
     display: grid;
-    grid-template-columns: auto, 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-areas:
       'icon info'
-      'icon descr';
-    gap: rem(30) fluid(80, 20);
+      'icon description';
     align-items: center;
+    gap: rem(30) fluid(80, 20);
 
     @include laptop {
       row-gap: rem(20);
     }
 
     @include mobile {
-      row-gap: rem(4);
       grid-template-areas:
         'icon subtitle'
         'title title'
-        'descr descr';
+        'description description';
+      row-gap: rem(4);
     }
   }
 
   &__icon {
     grid-area: icon;
-    align-self: center;
     width: fluid(150, 60);
   }
 
   &__info {
     display: grid;
     row-gap: rem(16);
+
+    @include laptop {
+      row-gap: rem(10);
+    }
 
     @include mobile {
       display: contents;
@@ -61,23 +64,23 @@
     }
   }
 
-  &__discr {
+  &__description {
     @include mobile {
-      grid-area: descr;
+      grid-area: description;
     }
   }
 
   &__list {
     display: grid;
-    padding: rem(20);
-    border-radius: rem(12);
-    background-color: var(--color-dark);
     gap: rem(20);
+    padding: rem(20);
+    background-color: var(--color-dark);
+    border-radius: rem(12);
 
     @include laptop {
+      gap: rem(10);
       padding: rem(10);
       border-radius: rem(10);
-      gap: rem(10);
     }
 
     @include mobile-above {

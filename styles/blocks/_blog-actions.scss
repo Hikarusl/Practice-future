@@ -17,7 +17,7 @@
     column-gap: rem(4);
     color: var(--color-grey-60);
     font-size: rem(18);
-    font-family: var(--font-family-accent);
+    font-family: var(--font-family-accent), sans-serif;
     padding: rem(8) rem(16);
     background-color: var(--color-dark-10);
     border-radius: rem(100);
@@ -37,7 +37,7 @@
     }
   }
 
-  &__icon-wraper {
+  &__icon-wrapper {
     --size: #{rem(24)};
 
     @include square(var(--size));

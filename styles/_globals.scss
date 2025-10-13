@@ -9,7 +9,7 @@ html {
 body {
   @include fluid-text(18, 14);
 
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-base), sans-serif;
   letter-spacing: -0, 03em;
   color: var(--color-gray-50);
   background-color: var(--color-dark);
@@ -42,7 +42,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), sans-serif;
   font-weight: 500;
 }
 

@@ -10,7 +10,7 @@
   @include visually-hidden;
 }
 
-.hiden-mobile {
+.hidden-mobile {
   @include mobile {
     display: none !important;
   }
@@ -87,7 +87,7 @@
 
     content: '';
     right: 0;
-    background: url('../../icons/blackArrow.svg') center no-repeat
+    background: url('icons/blackArrow.svg') center no-repeat
       var(--color-accent);
     border-radius: 50%;
   }

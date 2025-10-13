@@ -5,7 +5,7 @@ class VideoPlayer {
     root: rootSelector,
     video: '[data-js-video-player-video]',
     button: '[data-js-video-player-play-button]',
-    pannel: '[data-js-video-player-pannel]',
+    panel: '[data-js-video-player-panel]',
   }
 
   stateClasses = {
@@ -15,7 +15,7 @@ class VideoPlayer {
   constructor(rootElement) {
     this.rootElement = rootElement
     this.videoElement = this.rootElement.querySelector(this.selectors.video)
-    this.pannelElement = this.rootElement.querySelector(this.selectors.pannel)
+    this.pannelElement = this.rootElement.querySelector(this.selectors.panel)
     this.buttonElement = this.rootElement.querySelector(this.selectors.button)
 
     this.bindEvents()

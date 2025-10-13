@@ -38,7 +38,7 @@
       &__title {
         @include fluid-text(32, 20);
 
-        font-family: var(--font-family-base);
+        font-family: var(--font-family-base), sans-serif;
         font-weight: 600;
       }
     }

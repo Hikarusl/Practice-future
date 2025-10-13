@@ -20,7 +20,7 @@
   &__title {
     @include fluid-text(64, 28);
 
-    font-family: var(--font-family-base);
+    font-family: var(--font-family-base), sans-serif;
     font-weight: 600;
   }
 
