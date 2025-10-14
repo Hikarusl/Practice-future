@@ -10,65 +10,63 @@
 
   <body>
     <header class="header" data-js-header>
-      <div class="header__promo">
-        <div class="header__promo-inner container">
-          <a href="/" class="header__promo-link">
+    <div class="header__promo">
+      <div class="header__promo-inner container">
+        <a href="/" class="header__promo-link">
             <span class="icon icon--yellow-arrow"
-              >Subscribe to our Newsletter For New & latest Blogs and
+            >Subscribe to our Newsletter For New & latest Blogs and
               Resources</span
             >
+        </a>
+      </div>
+    </div>
+    <div class="header__body">
+      <div class="header__body-inner container">
+        <a href="/" class="header-logo logo" title="Home">
+          <img
+            src="./images/logo.svg"
+            alt="Future Tech"
+            class="logo-image"
+            width="179"
+            height="60"
+          />
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="heder__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link is-active" href="./index.html">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./news.html">News</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./podcasts.html">Podcasts</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./resources.html">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="./contacts.html"
+            class="header__contacts button button-accent"
+          >Contact Us
           </a>
         </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          data-js-header-burger
+          aria-label="Open menu"
+          title="Open menu"
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
       </div>
-      <div class="header__body">
-        <div class="header__body-inner container">
-          <a href="/" class="header-logo logo" title="Home">
-            <img
-              src="./images/logo.svg"
-              alt="Future Tech"
-              class="logo-image"
-              width="179"
-              height="50"
-            />
-          </a>
-          <div class="header__overlay" data-js-header-overlay>
-            <nav class="heder__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item">
-                  <a href="./index.html" class="header__menu-link">Home </a>
-                </li>
-                <li class="header__menu-item is-active">
-                  <a href="./news.html" class="header__menu-link">News </a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="./index.html" class="header__menu-link">Podcasts </a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="./index.html" class="header__menu-link"
-                    >Resources
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <a
-              href="./contacts.html"
-              class="header__contacts button button-accent"
-              >Contact Us
-            </a>
-          </div>
-          <button
-            class="header__burger-button burger-button visible-mobile"
-            data-js-header-burger
-            aria-label="Open menu"
-            title="Open menu"
-          >
-            <span class="burger-button__line"></span>
-            <span class="burger-button__line"></span>
-            <span class="burger-button__line"></span>
-          </button>
-        </div>
-      </div>
-    </header>
+    </div>
+  </header>
 
     <main class="main">
       <section class="hero-alt" aria-labelledby="news-title">
@@ -1273,23 +1271,23 @@
         <div class="footer__body">
           <nav class="footer__menu">
             <div class="footer__menu-column">
-              <a href="/" class="footer__menu-main-link">Home </a>
+              <a href="index.html" class="footer__menu-main-link">Home </a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">Features </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Blogs </a>
+                  <a href="blog.html" class="footer__menu-link">Blogs </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Resources </a>
+                  <a href="resources.html" class="footer__menu-link">Resources </a>
                   <span class="badge">New</span>
                 </li>
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">Testimonials </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Contact Us </a>
+                  <a href="contacts.html" class="footer__menu-link">Contact Us </a>
                 </li>
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">Newsletter </a>
@@ -1297,7 +1295,7 @@
               </ul>
             </div>
             <div class="footer__menu-column">
-              <a href="/" class="footer__menu-main-link">News </a>
+              <a href="news.html" class="footer__menu-main-link">News </a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">Trending Stories </a>
@@ -1320,7 +1318,7 @@
               </ul>
             </div>
             <div class="footer__menu-column">
-              <a href="/" class="footer__menu-main-link">Blogs </a>
+              <a href="blog.html" class="footer__menu-main-link">Blogs </a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">Quantum Computing </a>
@@ -1344,7 +1342,7 @@
               </ul>
             </div>
             <div class="footer__menu-column">
-              <a href="/" class="footer__menu-main-link">Podcasts </a>
+              <a href="podcasts.html" class="footer__menu-main-link">Podcasts </a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">AI Revolution </a>
@@ -1361,8 +1359,8 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__menu-column">
-              <a href="/" class="footer__menu-main-link">Resources </a>
+            <div class="footer__menu-columns">
+              <a href="resources.html" class="footer__menu-main-link">Resources </a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link button">
@@ -1393,7 +1391,7 @@
             <ul class="footer__extra-menu-list">
               <li class="footer__extra-menu-item">
                 <a href="/" class="footer__extra-menu-link"
-                  >Terms & Conditions
+                >Terms & Conditions
                 </a>
               </li>
               <li class="footer__extra-menu-item">

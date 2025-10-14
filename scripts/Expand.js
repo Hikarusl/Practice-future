@@ -20,7 +20,6 @@ class ExpandableContent {
   constructor(rootElement) {
     this.rootElement = rootElement
     this.buttonElement = this.rootElement.querySelector(this.selectors.button)
-    console.log(this.buttonElement)
     this.bindEvents()
   }
 
