@@ -18,6 +18,11 @@
   --transition-duration: 0.2s;
   --border: #{rem(1)} solid var(--color-dark-15);
   --shadow: 0 0 0 #{rem(3)} #191919;
+  --gradient: linear-gradient(
+      45deg,
+      var(--color-dark-15) 64%,
+      var(--color-accent) 136%
+  );
 
   @include laptop {
     --container-width: #{rem(1280)};

@@ -10,7 +10,7 @@ body {
   @include fluid-text(18, 14);
 
   font-family: var(--font-family-base), sans-serif;
-  letter-spacing: -0, 03em;
+  letter-spacing: -0, 3em;
   color: var(--color-gray-50);
   background-color: var(--color-dark);
   display: flex;
