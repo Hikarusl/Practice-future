@@ -9,67 +9,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Future Tech | Contacts</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <script src="./scripts/main.js" type="module"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"
+      defer
+    ></script>
+    <script src="./scripts/main.js" type="module" defer></script>
   </head>
   <body>
     <header class="header" data-js-header>
-    <div class="header__promo">
-      <div class="header__promo-inner container">
-        <a href="/" class="header__promo-link">
+      <div class="header__promo">
+        <div class="header__promo-inner container">
+          <a href="/" class="header__promo-link">
             <span class="icon icon--yellow-arrow"
-            >Subscribe to our Newsletter For New & latest Blogs and
+              >Subscribe to our Newsletter For New & latest Blogs and
               Resources</span
             >
-        </a>
-      </div>
-    </div>
-    <div class="header__body">
-      <div class="header__body-inner container">
-        <a href="/" class="header-logo logo" title="Home">
-          <img
-            src="./images/logo.svg"
-            alt="Future Tech"
-            class="logo-image"
-            width="179"
-            height="60"
-          />
-        </a>
-        <div class="header__overlay" data-js-header-overlay>
-          <nav class="heder__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a class="header__menu-link is-active" href="./index.html">Home</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="./news.html">News</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="./podcasts.html">Podcasts</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="./resources.html">Resources</a>
-              </li>
-            </ul>
-          </nav>
-          <a
-            href="./contacts.html"
-            class="header__contacts button button-accent"
-          >Contact Us
           </a>
         </div>
-        <button
-          class="header__burger-button burger-button visible-mobile"
-          data-js-header-burger
-          aria-label="Open menu"
-          title="Open menu"
-        >
-          <span class="burger-button__line"></span>
-          <span class="burger-button__line"></span>
-          <span class="burger-button__line"></span>
-        </button>
       </div>
-    </div>
-  </header>
+      <div class="header__body">
+        <div class="header__body-inner container">
+          <a href="/" class="header-logo logo" title="Home">
+            <img
+              src="./images/logo.svg"
+              alt="Future Tech"
+              class="logo-image"
+              width="179"
+              height="60"
+            />
+          </a>
+          <div class="header__overlay" data-js-header-overlay>
+            <nav class="heder__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="./index.html">Home</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="./news.html">News</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="./podcasts.html"
+                    >Podcasts</a
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="./resources.html"
+                    >Resources</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <a
+              href="./contacts.html"
+              class="header__contacts button button-accent"
+              >Contact Us
+            </a>
+          </div>
+          <button
+            class="header__burger-button burger-button visible-mobile"
+            data-js-header-burger
+            aria-label="Open menu"
+            title="Open menu"
+          >
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
 
     <main class="main">
       <section class="contacts" aria-labelledby="contacts-title">
@@ -297,12 +305,89 @@
                         >Phone Number
                       </label>
                       <div class="field__body">
-                        <div class="select">SELECT</div>
+                        <div class="select" data-js-select>
+                          <label
+                            class="select__label visually-hidden"
+                            for="phone-select"
+                            id="phone-label"
+                            >Phone number prefix</label
+                          >
+                          <select
+                            id="phone-select"
+                            class="select__original-control field__control"
+                            tabindex="-1"
+                            data-js-select-original
+                          >
+                            <option value="+7" selected>+7</option>
+                            <option value="+1">+1</option>
+                            <option value="+2">+2</option>
+                            <option value="+3">+3</option>
+                          </select>
+                          <div class="select__body">
+                            <div
+                              class="select__button field__control"
+                              tabindex="0"
+                              role="combobox"
+                              aria-expanded="false"
+                              aria-haspopup="listbox"
+                              aria-controls="phone-dropdown"
+                              aria-labelledby="phone-label"
+                              data-js-select-button
+                            >
+                              +7
+                            </div>
+                            <div
+                              class="select__dropdown"
+                              id="phone-dropdown"
+                              role="listbox"
+                              aria-labelledby="phone-label"
+                              data-js-select-dropdown
+                            >
+                              <div
+                                class="select__option is-selected is-current"
+                                role="option"
+                                aria-selected="true"
+                                id="phone-option-0"
+                                data-js-select-option
+                              >
+                                +7
+                              </div>
+                              <div
+                                class="select__option"
+                                role="option"
+                                aria-selected="false"
+                                id="phone-option-1"
+                                data-js-select-option
+                              >
+                                +1
+                              </div>
+                              <div
+                                class="select__option"
+                                role="option"
+                                aria-selected="false"
+                                id="phone-option-2"
+                                data-js-select-option
+                              >
+                                +2
+                              </div>
+                              <div
+                                class="select__option"
+                                role="option"
+                                aria-selected="false"
+                                id="phone-option-3"
+                                data-js-select-option
+                              >
+                                +3
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <input
                           id="phoneNumber"
                           class="field__control"
                           placeholder="(999) 999-99-99"
                           required
+                          data-js-input-mask="(000) 000-00-00"
                         />
                       </div>
                     </div>
@@ -602,14 +687,18 @@
                   <a href="blog.html" class="footer__menu-link">Blogs </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="resources.html" class="footer__menu-link">Resources </a>
+                  <a href="resources.html" class="footer__menu-link"
+                    >Resources
+                  </a>
                   <span class="badge">New</span>
                 </li>
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">Testimonials </a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="contacts.html" class="footer__menu-link">Contact Us </a>
+                  <a href="contacts.html" class="footer__menu-link"
+                    >Contact Us
+                  </a>
                 </li>
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">Newsletter </a>
@@ -664,7 +753,9 @@
               </ul>
             </div>
             <div class="footer__menu-column">
-              <a href="podcasts.html" class="footer__menu-main-link">Podcasts </a>
+              <a href="podcasts.html" class="footer__menu-main-link"
+                >Podcasts
+              </a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link">AI Revolution </a>
@@ -682,7 +773,9 @@
               </ul>
             </div>
             <div class="footer__menu-columns">
-              <a href="resources.html" class="footer__menu-main-link">Resources </a>
+              <a href="resources.html" class="footer__menu-main-link"
+                >Resources
+              </a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a href="/" class="footer__menu-link button">
@@ -713,7 +806,7 @@
             <ul class="footer__extra-menu-list">
               <li class="footer__extra-menu-item">
                 <a href="/" class="footer__extra-menu-link"
-                >Terms & Conditions
+                  >Terms & Conditions
                 </a>
               </li>
               <li class="footer__extra-menu-item">

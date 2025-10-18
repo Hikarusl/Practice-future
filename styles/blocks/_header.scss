@@ -61,9 +61,9 @@
 
     &-item {
       padding: rem(14) rem(24);
-      color: var(--color-grey-50);
+      color: var(--color-gray-50);
 
-      &.is-active {
+      &:has(.is-active) {
         color: var(--color-light);
         font-weight: 500;
         background-color: var(--color-dark);

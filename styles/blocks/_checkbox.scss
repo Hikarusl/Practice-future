@@ -4,24 +4,31 @@
   display: inline-flex;
   align-items: center;
   column-gap: rem(10);
+  color: var(--color-light);
 
   @include laptop {
     column-gap: rem(6);
   }
 
-  &__label {
-    color: var(--color-light);
+  @include hover() {
+    color: var(--color-accent);
   }
 
   &__input {
     --size: #{rem(28)};
-
     @include square(var(--size));
 
     appearance: none;
+    margin: 0;
     border: var(--border);
     background-color: var(--color-dark-10);
     border-radius: rem(4);
+
+    @include hover() {
+      border-color: var(--color-accent);
+    }
+
+    @include flex-center;
 
     @include laptop {
       --size: #{rem(24)};
@@ -37,6 +44,10 @@
       &::after {
         @include hide;
       }
+    }
+
+    &:user-invalid {
+      border-color: var(--color-red);
     }
   }
 }

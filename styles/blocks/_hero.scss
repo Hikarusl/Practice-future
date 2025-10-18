@@ -31,7 +31,7 @@
 
   &__subtitle {
     font-size: fluid(30, 18);
-    font-family: var(--font-family-accen), sans-serif;
+    font-family: var(--font-family-accent), sans-serif;
     font-weight: 500;
     color: var(--color-dark-40);
 
@@ -68,11 +68,11 @@
     }
   }
 
-  &__resorces-preview {
+  &__resources-preview {
     grid-area: resorces;
     padding-left: rem(80);
     padding-bottom: rem(80);
-    background: url('../../images/previwe_bg.png') 0 0 / cover no-repeat;
+    background: url('../../images/preview-bg-mobile.png') 0 0 / cover no-repeat;
 
     @include tablet {
       width: 100vw;

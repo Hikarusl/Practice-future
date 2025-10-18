@@ -12,6 +12,10 @@
     @include laptop {
       border-radius: rem(10);
     }
+
+    &--small {
+      height: fluid(290, 208);
+    }
   }
 
   &__panel {
@@ -43,6 +47,11 @@
       position: relative;
       z-index: 1;
     }
+
+    &--center {
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__play-button {
@@ -61,7 +70,7 @@
     }
 
     @include hover {
-      color: var(--colo-accent);
+      color: var(--color-accent);
     }
   }
 

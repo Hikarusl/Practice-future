@@ -1,3 +1,5 @@
+// Абстрактный класс для проксирования состояний
+
 class BaseComponent {
   constructor() {
     if (this.constructor === BaseComponent) {

@@ -36,6 +36,10 @@
       box-shadow: var(--shadow);
       border-color: var(--color-accent);
     }
+
+    &:user-invalid {
+      border-color: var(--color-red);
+    }
   }
 
   textarea.field__control {
